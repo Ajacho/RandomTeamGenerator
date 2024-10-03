@@ -1,9 +1,22 @@
+@model RandomTeamGenerator.Models.TeamFormation
 @{
     ViewData["Title"] = "Team Form Generator";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Hello</h1>
+    <h1 class="display-4">Random Team Generator Form</h1>
 
+    <form asp-action="TeamForm" method="post">
+        <div>
+            <label asp-for="Names">Names</label>
+            <input asp-for="Names" />
+        </div>
+
+        <div>
+            <label asp-for="TeamSize">Select Team Size from 2 to 10</label>
+            <input asp-for="TeamSize" />
+        </div>
+
+    </form>
 
 </div>
