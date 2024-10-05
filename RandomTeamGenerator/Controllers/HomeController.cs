@@ -6,12 +6,6 @@ namespace RandomTeamGenerator.Controllers;
 
 public class HomeController : Controller
 {
-    // private readonly ILogger<HomeController> _logger;
-
-    // public HomeController(ILogger<HomeController> logger)
-    // {
-    //     _logger = logger;
-    // }
 
     public IActionResult Index()
     {
@@ -23,14 +17,26 @@ public class HomeController : Controller
         return View();
     }
 
+    [HttpGet]
     public ViewResult TeamForm(){
-        return View();
+        return View(new TeamFormation());
     }   
 
+    [HttpPost]
+    public ActionResult TeamForm(TeamFormation teamFormation){
 
-    // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    // public IActionResult Error()
-    // {
-    //     return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    // }
+        if (teamFormation.Names != null && teamFormation.TeamSize > 0){
+            var namesList = teamFormation.Names.Where(n => !string.IsNullOrEmpty(n)).ToList();
+    
+            var shuffledNames = namesList.OrderBy(x => Guid.NewGuid()).ToList();
+
+            for(int i = 0; i < shuffledNames.Count; i += teamFormation.TeamSize){
+                var group = shuffledNames.Skip(i).Take(teamFormation.TeamSize).ToList();
+                teamFormation.GroupedTeams.Add(group);
+            }
+        }   
+        return View(teamFormation);
+    }
+
+
 }

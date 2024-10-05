@@ -8,13 +8,17 @@
 
     <form asp-action="TeamForm" method="post">
         <div>
-            <label asp-for="Names">Names</label>
-            <input asp-for="Names" />
+            <label asp-for="Names">Names Here:</label>
+            <textarea asp-for="Names">@string.Join(" ", Model.Names)</textarea>\
         </div>
 
         <div>
-            <label asp-for="TeamSize">Select Team Size from 2 to 10</label>
-            <input asp-for="TeamSize" />
+            <label asp-for="TeamSize">Number of Groups:</label>
+            <input type="number" asp-for="TeamSize" />
+        </div>
+
+        <div>
+            <input type="submit" value="Go!"/>
         </div>
 
     </form>
