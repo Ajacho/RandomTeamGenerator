@@ -26,7 +26,9 @@ public class HomeController : Controller
     public ActionResult TeamForm(TeamFormation teamFormation){
 
         if (teamFormation.Names != null && teamFormation.TeamSize > 0){
-            var namesList = teamFormation.Names.Where(n => !string.IsNullOrEmpty(n)).ToList();
+            var namesList = teamFormation.Names.Split(new[] {'\r', '\n'}, StringSplitOptions.RemoveEmptyEntries)
+                                                .Select(name => name.Trim())
+                                                .ToList();
     
             var shuffledNames = namesList.OrderBy(x => Guid.NewGuid()).ToList();
 
@@ -35,7 +37,7 @@ public class HomeController : Controller
                 teamFormation.GroupedTeams.Add(group);
             }
         }   
-        return View(teamFormation);
+        return View("TeamForm", teamFormation);
     }
 
 

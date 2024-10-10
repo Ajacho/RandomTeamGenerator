@@ -3,24 +3,68 @@
     ViewData["Title"] = "Team Form Generator";
 }
 
+
 <div class="text-center">
-    <h1 class="display-4">Random Team Generator Form</h1>
+    <h1 class="display-5">Random Team Generator Form</h1>
 
     <form asp-action="TeamForm" method="post">
         <div>
             <label asp-for="Names">Names Here:</label>
-            <textarea asp-for="Names">@string.Join(" ", Model.Names)</textarea>\
+            <textarea asp-for="Names">@Model.Names</textarea>
         </div>
 
         <div>
-            <label asp-for="TeamSize">Number of Groups:</label>
+            <label asp-for="TeamSize">Number of members:</label>
             <input type="number" asp-for="TeamSize" />
         </div>
 
         <div>
-            <input type="submit" value="Go!"/>
+            <button id="CreateTeams">Go!</button>
         </div>
 
     </form>
 
+@if (Model.GroupedTeams != null && Model.GroupedTeams.Any())
+{
+    <h3>Grouped Teams</h3>
+    
+        @for (int i = 0; i < Model.GroupedTeams.Count; i++){
+            
+                <strong>Team @i:</strong>
+                
+                    @foreach (var name in Model.GroupedTeams[i])
+                    {
+                        <li>@name</li>
+                    }
+                
+            
+        }
+    
+}
+
+
+        <div>
+            <button id="CreateTeams">Bonsai Names</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+
