@@ -27,7 +27,8 @@
 @if (Model.GroupedTeams != null && Model.GroupedTeams.Any())
 {
     <h3>Grouped Teams</h3>
-    
+    <ul id="teamList">
+
         @for (int i = 0; i < Model.GroupedTeams.Count; i++){
             
                 <strong>Team @i:</strong>
@@ -36,34 +37,10 @@
                     {
                         <li>@name</li>
                     }
-                
-            
-        }
-    
+        } 
+            <button id="BonsaiNamesButton">Bonsai Names</button>
+    </ul>
 }
-
-
-        <div>
-            <button id="CreateTeams">Bonsai Names</button>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>
