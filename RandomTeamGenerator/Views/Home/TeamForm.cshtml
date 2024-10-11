@@ -3,6 +3,12 @@
     ViewData["Title"] = "Team Form Generator";
 }
 
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha384-+0n0xVW2eSR5OomE6p0cr8AkwSXT6j/mj2XqDjli5Keh4km9BqVZxboF+eXzPn8r" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/booking.js"></script>
+</head>
 
 <div class="text-center">
     <h1 class="display-5">Random Team Generator Form</h1>
@@ -10,38 +16,40 @@
     <form asp-action="TeamForm" method="post">
         <div>
             <label asp-for="Names">Names Here:</label>
-            <textarea asp-for="Names">@Model.Names</textarea>
+            <textarea id="names" asp-for="Names">@Model.Names</textarea>
         </div>
 
         <div>
             <label asp-for="TeamSize">Number of members:</label>
-            <input type="number" asp-for="TeamSize" />
+            <input type="number" id="teamSize" asp-for="TeamSize" />
         </div>
 
         <div>
-            <button id="CreateTeams">Go!</button>
+            <button type="submit" id="CreateTeams">Go!</button>
         </div>
 
     </form>
 
-@if (Model.GroupedTeams != null && Model.GroupedTeams.Any())
-{
-    <h3>Grouped Teams</h3>
-    <ul id="teamList">
+    <div id="teamContainer">
 
-        @for (int i = 0; i < Model.GroupedTeams.Count; i++){
-            
-                <strong>Team @i:</strong>
-                
+        @if (Model.GroupedTeams != null && Model.GroupedTeams.Any())
+        {
+            <h3>Grouped Teams</h3>
+            <ul id="teamList">
+
+                @for (int i = 0; i < Model.GroupedTeams.Count; i++){
+                    
+                    <strong class="team-heading" id="team-heading-@i">Team @i:</strong>
+                    
                     @foreach (var name in Model.GroupedTeams[i])
                     {
                         <li>@name</li>
                     }
-        } 
-            <button id="BonsaiNamesButton">Bonsai Names</button>
-    </ul>
-}
-
-
+                } 
+            </ul>
+        }
+    <button id="BonsaiNamesButton" type="button">Bonsai Names</button>
+    </div>
 </div>
+
 

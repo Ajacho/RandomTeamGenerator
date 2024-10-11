@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ociXGnbgNXuPE2dbqAMbwbsw+Sop6xh0gcJBJh0V1gg=",
+  "Hash": "wwCqx7YctY5WfyQoLzMCB0moKDZbQj9ekJmwpIdKJu4=",
   "Source": "RandomTeamGenerator",
   "BasePath": "_content/RandomTeamGenerator",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\files\\bonsai.txt",
+      "SourceId": "RandomTeamGenerator",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\",
+      "BasePath": "_content/RandomTeamGenerator",
+      "RelativePath": "files/bonsai.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\bonsai.txt"
+    },
+    {
       "Identity": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\js\\site.js",
       "SourceId": "RandomTeamGenerator",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\lib\\bonsai.txt",
+      "SourceId": "RandomTeamGenerator",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\",
+      "BasePath": "_content/RandomTeamGenerator",
+      "RelativePath": "lib/bonsai.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bonsai.txt"
     },
     {
       "Identity": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

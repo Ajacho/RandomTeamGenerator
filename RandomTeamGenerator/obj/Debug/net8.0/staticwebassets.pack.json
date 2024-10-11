@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\files\\bonsai.txt",
+      "PackagePath": "staticwebassets\\files\\bonsai.txt"
+    },
+    {
       "Id": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\lib\\bonsai.txt",
+      "PackagePath": "staticwebassets\\lib\\bonsai.txt"
     },
     {
       "Id": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\lib\\bootstrap\\LICENSE",
