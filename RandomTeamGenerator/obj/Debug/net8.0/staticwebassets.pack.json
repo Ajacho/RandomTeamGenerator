@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\files\\bonsai.txt"
     },
     {
+      "Id": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\images\\bonsai-azalea-red-blooms.jpg",
+      "PackagePath": "staticwebassets\\images\\bonsai-azalea-red-blooms.jpg"
+    },
+    {
       "Id": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

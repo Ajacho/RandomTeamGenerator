@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wwCqx7YctY5WfyQoLzMCB0moKDZbQj9ekJmwpIdKJu4=",
+  "Hash": "hcsLLZk6CubG0C0xHTvPE4fChiR4+g2n0Gf2enV6apw=",
   "Source": "RandomTeamGenerator",
   "BasePath": "_content/RandomTeamGenerator",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\bonsai.txt"
+    },
+    {
+      "Identity": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\images\\bonsai-azalea-red-blooms.jpg",
+      "SourceId": "RandomTeamGenerator",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\",
+      "BasePath": "_content/RandomTeamGenerator",
+      "RelativePath": "images/bonsai-azalea-red-blooms.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bonsai-azalea-red-blooms.jpg"
     },
     {
       "Identity": "C:\\Users\\belen\\OneDrive\\Desktop\\FALL 2024\\RandomTeamGenerator\\RandomTeamGenerator\\wwwroot\\js\\site.js",
