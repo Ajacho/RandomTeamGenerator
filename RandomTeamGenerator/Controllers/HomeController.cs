@@ -39,6 +39,4 @@ public class HomeController : Controller
         }   
         return View("TeamForm", teamFormation);
     }
-
-
 }
